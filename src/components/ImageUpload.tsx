@@ -170,6 +170,7 @@ const ImageUpload = ({
                 <div
                   className="progress-bar progress-bar-striped progress-bar-animated"
                   role="progressbar"
+                  title='img'
                   style={{ width: `${uploadProgress}%` }}
                   aria-valuenow={uploadProgress}
                   aria-valuemin={0}
@@ -185,6 +186,7 @@ const ImageUpload = ({
         <input
           ref={fileInputRef}
           type="file"
+          title='upload'
           accept={acceptedFormats.join(',')}
           onChange={handleFileSelect}
           className="d-none"
