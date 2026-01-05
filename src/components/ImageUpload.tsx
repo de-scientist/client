@@ -1,4 +1,5 @@
-import { useState, useRef, ChangeEvent, useEffect } from 'react'
+import { useState, useRef, useEffect } from 'react'
+import type { ChangeEvent } from 'react'
 import { uploadImageToCloudinary, getImageUrl, type CloudinaryUploadResponse } from '../services/cloudinary'
 import '../styles/imageUpload.css'
 
