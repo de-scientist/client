@@ -77,7 +77,7 @@ const EventsManagement = () => {
     }
   }
 
-  const handleDelete = async () => {
+  async () => {
     if (!selectedEvent) return
     try {
       await eventsAPI.delete(selectedEvent.id)
