@@ -237,10 +237,6 @@ export const usersAPI = {
     }),
 }
 
-// Resources API (optional backend support)
-export const resourcesAPI = {
-  getAll: () => apiRequest('/resources'),
-}
 
 // Members API
 export const membersAPI = {
@@ -269,6 +265,107 @@ export const membersAPI = {
       body: JSON.stringify({ status }),
     }),
 }
+
+// Resources API
+export const resourcesAPI = {
+  // Public resources (client-facing)
+  getAll: (params: Record<string, string> = {}) => {
+    const queryString = new URLSearchParams(params).toString()
+    return apiRequest(`/resources${queryString ? `?${queryString}` : ''}`)
+  },
+
+  // Admin: get all resources
+  adminGetAll: (params: Record<string, string> = {}) => {
+    const queryString = new URLSearchParams(params).toString()
+    return apiRequest(`/resources/admin${queryString ? `?${queryString}` : ''}`)
+  },
+
+  // Admin: create resource
+  create: (resourceData: {
+    title: string
+    description?: string
+    url?: string
+    type?: string
+    imageUrl?: string
+    isActive?: boolean
+  }) =>
+    apiRequest('/resources/admin', {
+      method: 'POST',
+      body: JSON.stringify(resourceData),
+    }),
+
+  // Admin: update resource
+  update: (
+    id: string,
+    resourceData: {
+      title?: string
+      description?: string
+      url?: string
+      type?: string
+      imageUrl?: string
+      isActive?: boolean
+    }
+  ) =>
+    apiRequest(`/resources/admin/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(resourceData),
+    }),
+
+  // Admin: toggle visibility
+  toggle: (id: string) =>
+    apiRequest(`/resources/admin/${id}/toggle`, {
+      method: 'PATCH',
+    }),
+
+  // Admin: delete resource
+  delete: (id: string) =>
+    apiRequest(`/resources/admin/${id}`, {
+      method: 'DELETE',
+    }),
+}
+
+// Media API
+export const mediaAPI = {
+  getAll: (params: Record<string, string> = {}) => {
+    const queryString = new URLSearchParams(params).toString()
+    return apiRequest(`/media/admin${queryString ? `?${queryString}` : ''}`)
+  },
+
+  adminGetAll: (params: Record<string, string> = {}) => {
+    const queryString = new URLSearchParams(params).toString()
+    return apiRequest(`/media/admin${queryString ? `?${queryString}` : ''}`)
+  },
+
+  create: (mediaData: {
+    title: string
+    description?: string
+    category?: string
+    imageUrl: string
+    isActive: boolean
+  }) =>
+    apiRequest('/media/admin', {
+      method: 'POST',
+      body: JSON.stringify(mediaData),
+    }),
+
+  update: (id: string, mediaData: any) =>
+    apiRequest(`/media/admin/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(mediaData),
+    }),
+
+  toggle: (id: string) =>
+    apiRequest(`/media/admin/${id}/toggle`, {
+      method: 'PATCH',
+    }),
+
+  delete: (id: string) =>
+    apiRequest(`/media/admin/${id}`, {
+      method: 'DELETE',
+    }),
+}
+
+
 
 export default {
   auth: authAPI,

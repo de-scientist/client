@@ -19,6 +19,8 @@ import ContactSubmissionsManagement from './pages/admin/ContactSubmissionsManage
 import NewsletterSubscriptionsManagement from './pages/admin/NewsletterSubscriptionsManagement'
 import UsersManagement from './pages/admin/UsersManagement'
 import AdminMembersPage from './pages/admin/AdminMembersPage'
+import AdminResourcesManagement from './pages/admin/AdminResourcesManagement'
+import MediaManagement from './pages/admin/MediaManagement'
 
 // Ministry detail pages
 import MusicMinistryPage from './pages/ministries/MusicMinistryPage'
@@ -66,6 +68,8 @@ function App() {
         <Route path="admin/newsletter" element={<NewsletterSubscriptionsManagement />} />
         <Route path="admin/users" element={<UsersManagement />} />
         <Route path="admin/members" element={<AdminMembersPage />} />
+        <Route path="admin/resources" element={<AdminResourcesManagement />} />
+        <Route path="admin/media" element={<MediaManagement />} />
         <Route path="register" element={<Register />} />
 
         {/* Ministry detail routes */}
