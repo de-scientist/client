@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom'
 import '../assets/mut/css/about.css'
 
 const executiveMembers = [
-  { name: 'Ezekiel Thaara', role: 'Chairman', image: '/assets/images/EZEKIEL.jpg', link: '/committees/chairman', borderColor: 'border-orange' },
-  { name: 'Jesca Kinya', role: '1st Vice Chair', image: '/assets/images/JES.jpg', link: '/committees/vice-chair1', borderColor: 'border-navy' },
+  { name: 'Purdri Kihika', role: 'Chairman', image: '/assets/images/PADRI.jpeg', link: '/committees/chairman', borderColor: 'border-orange' },
+  { name: 'Purity Njeri', role: '1st Vice Chair', image: '/assets/images/PURITY.jpeg', link: '/committees/vice-chair1', borderColor: 'border-navy' },
   { name: 'Martin Gitau', role: '2nd Vice Chair', image: '/assets/images/MARTIN.jpg', link: '/committees/vice-chair2', borderColor: 'border-orange' },
   { name: 'Grace Kanyiri', role: 'Secretary', image: '/assets/images/GRACE.jpg', link: '/committees/secretary', borderColor: 'border-navy' },
   { name: 'Daisy Mutheu', role: 'Vice Secretary', image: '/assets/images/DAISY.jpg', link: '/committees/vice-secretary', borderColor: 'border-orange' },
