@@ -179,7 +179,7 @@ const AboutPage = () => {
         <div className="container py-4">
           <div className="text-center mb-5">
             <h2 className="fw-bold mb-2">The Executive Committee</h2>
-            <p className="text-muted">Leading MUTCU with dedication for the 2024/2025 Spiritual Year.</p>
+            <p className="text-muted">Leading MUTCU with dedication for the 2025/2026 Spiritual Year.</p>
           </div>
           <div className="row g-4">
             {executiveMembers.map((member, index) => (
