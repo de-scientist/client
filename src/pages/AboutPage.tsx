@@ -4,16 +4,16 @@ import '../assets/mut/css/about.css'
 const executiveMembers = [
   { name: 'Purdri Kihika', role: 'Chairman', image: '/assets/images/PADRI.jpeg', link: '/committees/chairman', borderColor: 'border-orange' },
   { name: 'Purity Njeri', role: '1st Vice Chair', image: '/assets/images/PURITY.jpeg', link: '/committees/vice-chair1', borderColor: 'border-navy' },
-  { name: 'Martin Gitau', role: '2nd Vice Chair', image: '/assets/images/MARTIN.jpg', link: '/committees/vice-chair2', borderColor: 'border-orange' },
-  { name: 'Grace Kanyiri', role: 'Secretary', image: '/assets/images/GRACE.jpg', link: '/committees/secretary', borderColor: 'border-navy' },
-  { name: 'Daisy Mutheu', role: 'Vice Secretary', image: '/assets/images/DAISY.jpg', link: '/committees/vice-secretary', borderColor: 'border-orange' },
-  { name: 'Joy Karimi', role: 'Treasurer', image: '/assets/images/JOY.jpg', link: '/committees/treasurer', borderColor: 'border-navy' },
-  { name: 'Purity Njeri', role: 'Bible Study & Discipleship Coordinator', image: '/assets/images/PURITY.jpg', link: '/committees/bible-study', borderColor: 'border-orange' },
-  { name: 'Roy Ndege', role: 'Prayer Coordinator', image: '/assets/images/PRAYER.jpg', link: '/committees/prayer', borderColor: 'border-navy' },
-  { name: 'Yusuf Muchiri', role: 'Missions & Evangelism Coordinator', image: '/assets/images/YUSUF.jpg', link: '/committees/missions', borderColor: 'border-orange' },
-  { name: 'Jabez Ayugu', role: 'Music Coordinator', image: '/assets/images/JABEZ.jpg', link: '/committees/music', borderColor: 'border-navy' },
-  { name: 'Joseph Mbogo', role: 'Technical Coordinator', image: '/assets/images/JOSEPH.jpg', link: '/committees/technical', borderColor: 'border-orange' },
-  { name: 'Brian Ingwee', role: 'Creative Ministry Coordinator', image: '/assets/images/Ingwee.JPG', link: '/committees/creative', borderColor: 'border-navy' },
+  { name: 'David Kimani', role: '2nd Vice Chair', image: '/assets/images/DAVID.jpeg', link: '/committees/vice-chair2', borderColor: 'border-orange' },
+  { name: 'Faith Wavinya', role: 'Secretary', image: '/assets/images/FAITH.jpeg', link: '/committees/secretary', borderColor: 'border-navy' },
+  { name: 'Natasha Amani', role: 'Vice Secretary', image: '/assets/images/AMANI.jpeg', link: '/committees/vice-secretary', borderColor: 'border-orange' },
+  { name: 'Mercy Mwaura', role: 'Treasurer', image: '/assets/images/MERCY.jpeg', link: '/committees/treasurer', borderColor: 'border-navy' },
+  { name: 'Caleb Esere', role: 'Bible Study & Discipleship Coordinator', image: '/assets/images/CALEB.jpeg', link: '/committees/bible-study', borderColor: 'border-orange' },
+  { name: 'Martha Thuku', role: 'Prayer Coordinator', image: '/assets/images/MARTHA.jpeg', link: '/committees/prayer', borderColor: 'border-navy' },
+  { name: 'Mercy Mutuku', role: 'Missions & Evangelism Coordinator', image: '/assets/images/MUTUKU.jpeg', link: '/committees/missions', borderColor: 'border-orange' },
+  { name: 'Peter Vaati', role: 'Music Coordinator', image: '/assets/images/PETER.jpeg', link: '/committees/music', borderColor: 'border-navy' },
+  { name: 'John Mwanthi', role: 'Technical Coordinator', image: '/assets/images/JOHN.jpeg', link: '/committees/technical', borderColor: 'border-orange' },
+  { name: 'Esther Karimeri', role: 'Creative Ministry Coordinator', image: '/assets/images/ESTHER.jpeg', link: '/committees/creative', borderColor: 'border-navy' },
 ]
 
 const aims = [
