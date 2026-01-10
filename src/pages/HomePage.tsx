@@ -105,7 +105,7 @@ const HomePage = () => {
             <div className="carousel-item active">
               <div
                 className="hero-bg"
-                style={{ backgroundImage: "url('/assets/images/Lumii_20241023_192938507.jpg')" }}
+                style={{ backgroundImage: "url('/assets/images/exec.jpg')" }}
               />
               <div className="hero-overlay" />
               <div className="hero-content text-center text-white" data-aos="fade-up" data-aos-duration="1000">
