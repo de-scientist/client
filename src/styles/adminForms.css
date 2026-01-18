@@ -4,8 +4,8 @@
   --mutcu-orange: #ff9700;
   --mutcu-red: #ff1229;
   --mutcu-teal: #30d5c8;
-  --font-heading: 'Montserrat', sans-serif;
-  --font-body: 'Lato', sans-serif;
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Lato", sans-serif;
 }
 
 /* Form Container */
@@ -34,6 +34,20 @@
   letter-spacing: 0.5px;
 }
 
+/* Ensure all headings in card headers are visible */
+.admin-form-container .card-header h1,
+.admin-form-container .card-header h2,
+.admin-form-container .card-header h3,
+.admin-form-container .card-header h4,
+.admin-form-container .card-header h5,
+.admin-form-container .card-header h6 {
+  color: #ffffff !important;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
 .admin-form-container .card-body {
   padding: 2rem;
   background: #ffffff;
@@ -51,7 +65,7 @@
 }
 
 .admin-form-container .form-label::after {
-  content: '';
+  content: "";
   display: inline-block;
   width: 3px;
   height: 12px;
@@ -129,7 +143,7 @@
   height: 1.25rem;
   margin-top: 0.25rem;
   border: 2px solid #e0e0e0;
-  cursor: pointer;
+  cursor: default;
   transition: all 0.3s ease;
 }
 
@@ -204,7 +218,7 @@
 /* Required Field Indicator */
 .admin-form-container .form-label:has(+ .form-control[required])::before,
 .admin-form-container .form-label:has(+ .form-select[required])::before {
-  content: '*';
+  content: "*";
   color: var(--mutcu-red);
   margin-right: 4px;
   font-weight: 700;
@@ -291,7 +305,8 @@
 
 .admin-form-container input[type="date"]::-webkit-calendar-picker-indicator,
 .admin-form-container input[type="time"]::-webkit-calendar-picker-indicator,
-.admin-form-container input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+.admin-form-container
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
   filter: invert(0.1);
 }
@@ -362,33 +377,117 @@
 
 /* Add these to your adminForms.css */
 .stat-item {
-    font-size: 10px;
+  font-size: 10px;
 }
 .ministry-icon-container {
-    width: 42px;
-    height: 42px;
+  width: 42px;
+  height: 42px;
 }
 .ministry-avatar {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 .animate-fade-in {
-    animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
 }
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .prayer-request-text {
-    max-width: 400px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  max-width: 400px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .status-select-custom {
-    width: auto;
-    min-width: 140px;
+  width: auto;
+  min-width: 140px;
+}
+
+/* Event form readability improvements */
+.admin-event-form {
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.admin-event-form .form-label {
+  color: var(--mutcu-navy-blue);
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.admin-event-form .form-control,
+.admin-event-form .form-select,
+.admin-event-form textarea {
+  background: #ffffff !important;
+  border: 1px solid #dfe3e8 !important;
+  box-shadow: 0 1px 2px rgba(4, 0, 61, 0.06);
+  min-height: 48px;
+  color: var(--mutcu-navy-blue) !important;
+}
+
+.admin-event-form textarea {
+  min-height: 140px;
+}
+
+/* Keep text visible when focusing/unfocusing fields */
+.admin-event-form .form-control:focus,
+.admin-event-form .form-select:focus,
+.admin-event-form textarea:focus {
+  background-color: #ffffff !important;
+  border-color: var(--mutcu-orange) !important;
+  color: var(--mutcu-navy-blue) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 151, 0, 0.15);
+  outline: none;
+}
+
+/* Ensure autofill text stays readable */
+.admin-event-form .form-control:-webkit-autofill,
+.admin-event-form .form-control:-webkit-autofill:hover,
+.admin-event-form .form-control:-webkit-autofill:focus,
+.admin-event-form .form-control:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+  -webkit-text-fill-color: var(--mutcu-navy-blue) !important;
+  background-color: #ffffff !important;
+  color: var(--mutcu-navy-blue) !important;
+}
+
+/* Softer placeholder for clarity */
+.admin-event-form .form-control::placeholder,
+.admin-event-form textarea::placeholder {
+  color: #adb5bd;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.admin-event-form .form-check-input {
+  width: 3rem;
+  height: 1.6rem;
+  border-radius: 50px;
+  border: 1px solid #cbd5e1;
+  background-color: #e2e8f0;
+}
+
+.admin-event-form .form-check-input:checked {
+  background-color: var(--mutcu-orange);
+  border-color: var(--mutcu-orange);
+}
+
+.admin-event-form .form-check-label {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.admin-event-form .btn {
+  min-height: 44px;
 }

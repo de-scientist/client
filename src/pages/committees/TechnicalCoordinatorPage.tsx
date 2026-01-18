@@ -8,7 +8,7 @@ const TechnicalCoordinatorPage = () => {
       {/* Hero Section */}
       <section
         className="page-hero-section d-flex align-items-center text-center text-white"
-        style={{ backgroundImage: "url('/assets/images/JOSEPH.jpg')" }}
+        style={{ backgroundImage: "url('/assets/images/JOHN.jpeg')" }}
       >
         <div className="hero-overlay" />
         <div
@@ -16,9 +16,7 @@ const TechnicalCoordinatorPage = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <h1 className="display-3 mb-3">
-            Technical Ministry
-          </h1>
+          <h1 className="display-3 mb-3">Technical Ministry</h1>
           <p className="lead">
             Supporting Worship and Ministry Through Technology
           </p>
@@ -36,28 +34,31 @@ const TechnicalCoordinatorPage = () => {
             >
               <div className="executive-member-card d-block text-center rounded-3 shadow-sm h-100">
                 <img
-                  src="/assets/images/JOSEPH.jpg"
-                  alt="Joseph Mbogo"
+                  src="/assets/images/JOHN.jpeg"
+                  alt="John Mwanthi"
                   className="img-fluid rounded-circle mb-3 border border-3 border-orange"
                 />
-                <h4 className="member-name">Joseph Mbogo</h4>
+                <h4 className="member-name">John Mwanthi</h4>
                 <p className="member-role">Technical Coordinator</p>
               </div>
             </div>
 
-            <div
-              className="col-lg-8"
-              data-aos="fade-left"
-              data-aos-delay="200"
-            >
+            <div className="col-lg-8" data-aos="fade-left" data-aos-delay="200">
               <h3 className="section-title text-start">
                 About the Technical Ministry
               </h3>
               <p>
-                The Technical Ministry oversees all technical, media, and logistical operations within MUTCU. It ensures that services, meetings, and official events run smoothly, efficiently, and without distraction.
+                The Technical Ministry oversees all technical, media, and
+                logistical operations within MUTCU. It ensures that services,
+                meetings, and official events run smoothly, efficiently, and
+                without distraction.
               </p>
               <p>
-                Under the leadership of Joseph Mbogo, the ministry unites ushering, sound and audio-visual services, digital ministry, and publicity. Through disciplined stewardship of resources and skills, it supports worship, communication, and outreach in alignment with MUTCU’s mission and values.
+                Under the leadership of John Mwanthi, the ministry unites
+                ushering, sound and audio-visual services, digital ministry, and
+                publicity. Through disciplined stewardship of resources and
+                skills, it supports worship, communication, and outreach in
+                alignment with MUTCU’s mission and values.
               </p>
             </div>
           </div>
@@ -71,7 +72,8 @@ const TechnicalCoordinatorPage = () => {
             Key Roles &amp; Responsibilities
           </h2>
           <p className="text-center lead mb-5">
-            The Technical Ministry supports the Union’s activities as outlined in the constitution and policies.
+            The Technical Ministry supports the Union’s activities as outlined
+            in the constitution and policies.
           </p>
 
           <div className="row justify-content-center">
@@ -107,20 +109,15 @@ const TechnicalCoordinatorPage = () => {
             Serve with Skill and Commitment
           </h2>
           <p className="section-subtitle">
-            Join the Technical Ministry and support MUTCU’s ministry through service and technical excellence.
+            Join the Technical Ministry and support MUTCU’s ministry through
+            service and technical excellence.
           </p>
 
-          <Link
-            to="/ministries"
-            className="btn btn-primary btn-lg me-3"
-          >
+          <Link to="/ministries" className="btn btn-primary btn-lg me-3">
             Explore Ministries <i className="fas fa-users ms-2" />
           </Link>
 
-          <Link
-            to="/events"
-            className="btn btn-secondary btn-lg"
-          >
+          <Link to="/events" className="btn btn-secondary btn-lg">
             View Events <i className="fas fa-calendar ms-2" />
           </Link>
         </div>

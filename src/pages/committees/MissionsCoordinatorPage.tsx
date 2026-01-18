@@ -8,7 +8,7 @@ const MissionsCoordinatorPage = () => {
       {/* Hero Section */}
       <section
         className="page-hero-section d-flex align-items-center text-center text-white"
-        style={{ backgroundImage: "url('/assets/images/YUSUF.jpg')" }}
+        style={{ backgroundImage: "url('/assets/images/MUTUKU.jpeg')" }}
       >
         <div className="hero-overlay" />
         <div
@@ -16,12 +16,8 @@ const MissionsCoordinatorPage = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <h1 className="display-3 mb-3">
-            Missions &amp; Evangelism Ministry
-          </h1>
-          <p className="lead">
-            Sharing the Gospel and Impacting Communities
-          </p>
+          <h1 className="display-3 mb-3">Missions &amp; Evangelism Ministry</h1>
+          <p className="lead">Sharing the Gospel and Impacting Communities</p>
         </div>
       </section>
 
@@ -36,36 +32,32 @@ const MissionsCoordinatorPage = () => {
             >
               <div className="executive-member-card d-block text-center rounded-3 shadow-sm h-100">
                 <img
-                  src="/assets/images/YUSUF.jpg"
-                  alt="Yusuf Muchiri"
+                  src="/assets/images/MUTUKU.jpeg"
+                  alt="Mercy Mutuku"
                   className="img-fluid rounded-circle mb-3 border border-3 border-orange"
                 />
-                <h4 className="member-name">Yusuf Muchiri</h4>
+                <h4 className="member-name">Mercy Mutuku</h4>
                 <p className="member-role">
                   Missions &amp; Evangelism Coordinator
                 </p>
               </div>
             </div>
 
-            <div
-              className="col-lg-8"
-              data-aos="fade-left"
-              data-aos-delay="200"
-            >
+            <div className="col-lg-8" data-aos="fade-left" data-aos-delay="200">
               <h3 className="section-title text-start">
                 About the Missions &amp; Evangelism Ministry
               </h3>
               <p>
                 The Missions and Evangelism Ministry is at the forefront of
-                MUTCU&apos;s outreach efforts, dedicated to sharing the Gospel of
-                Jesus Christ both within the university and in wider communities.
-                This ministry organizes campus outreach programs, annual
-                missions, and extends its reach through the Hope Ministry,
-                visiting prisons and hospitals to bring spiritual and material
-                support.
+                MUTCU&apos;s outreach efforts, dedicated to sharing the Gospel
+                of Jesus Christ both within the university and in wider
+                communities. This ministry organizes campus outreach programs,
+                annual missions, and extends its reach through the Hope
+                Ministry, visiting prisons and hospitals to bring spiritual and
+                material support.
               </p>
               <p>
-                Yusuf Muchiri, as the coordinator, leads the strategic planning
+                Mercy Mutuku, as the coordinator, leads the strategic planning
                 and execution of these initiatives, ensuring that MUTCU actively
                 fulfills its mission of reaching out to non-believers. The
                 ministry is also responsible for the Kairos Course, enhancing
@@ -123,17 +115,11 @@ const MissionsCoordinatorPage = () => {
             Join the Missions &amp; Evangelism team and help us transform lives.
           </p>
 
-          <Link
-            to="/ministries"
-            className="btn btn-primary btn-lg me-3"
-          >
+          <Link to="/ministries" className="btn btn-primary btn-lg me-3">
             Explore All Ministries <i className="fas fa-users-cog ms-2" />
           </Link>
 
-          <Link
-            to="/contact"
-            className="btn btn-secondary btn-lg"
-          >
+          <Link to="/contact" className="btn btn-secondary btn-lg">
             Partner With Us <i className="fas fa-handshake ms-2" />
           </Link>
         </div>

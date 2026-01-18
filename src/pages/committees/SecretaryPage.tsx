@@ -8,7 +8,7 @@ const SecretaryPage = () => {
       {/* Hero Section */}
       <section
         className="page-hero-section d-flex align-items-center text-center text-white"
-        style={{ backgroundImage: "url('/assets/images/GRACE.jpg')" }}
+        style={{ backgroundImage: "url('/assets/images/FAITH.jpeg')" }}
       >
         <div className="hero-overlay" />
         <div
@@ -16,9 +16,7 @@ const SecretaryPage = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <h1 className="display-3 mb-3">
-            The Secretary&apos;s Office
-          </h1>
+          <h1 className="display-3 mb-3">The Secretary&apos;s Office</h1>
           <p className="lead">
             Ensuring Effective Communication and Record-Keeping
           </p>
@@ -36,20 +34,16 @@ const SecretaryPage = () => {
             >
               <div className="executive-member-card d-block text-center rounded-3 shadow-sm h-100">
                 <img
-                  src="/assets/images/GRACE.jpg"
-                  alt="Grace Kanyiri"
+                  src="/assets/images/FAITH.jpeg"
+                  alt="Faith Wavinya"
                   className="img-fluid rounded-circle mb-3 border border-3 border-navy"
                 />
-                <h4 className="member-name">Grace Kanyiri</h4>
+                <h4 className="member-name">Faith Wavinya</h4>
                 <p className="member-role">Secretary</p>
               </div>
             </div>
 
-            <div
-              className="col-lg-8"
-              data-aos="fade-left"
-              data-aos-delay="200"
-            >
+            <div className="col-lg-8" data-aos="fade-left" data-aos-delay="200">
               <h3 className="section-title text-start">
                 About the Secretary&apos;s Office
               </h3>
@@ -61,7 +55,7 @@ const SecretaryPage = () => {
                 membership are accurately documented and disseminated.
               </p>
               <p>
-                Grace Kanyiri, as Secretary, ensures transparency and efficiency
+                Faith Wavinya, as Secretary, ensures transparency and efficiency
                 in the Union&apos;s operations. Her role involves managing
                 meeting minutes, maintaining official records, and facilitating
                 effective communication channels within MUTCU and with external
@@ -80,8 +74,8 @@ const SecretaryPage = () => {
             Key Roles &amp; Responsibilities
           </h2>
           <p className="text-center lead mb-5">
-            The Secretary&apos;s office is crucial for MUTCU&apos;s administrative
-            integrity.
+            The Secretary&apos;s office is crucial for MUTCU&apos;s
+            administrative integrity.
           </p>
 
           <div className="row justify-content-center">
@@ -112,24 +106,16 @@ const SecretaryPage = () => {
       {/* CTA Section */}
       <section className="py-5 cta-section text-white">
         <div className="container text-center" data-aos="zoom-in">
-          <h2 className="section-title text-white">
-            Explore Our Leadership!
-          </h2>
+          <h2 className="section-title text-white">Explore Our Leadership!</h2>
           <p className="section-subtitle">
             Learn more about the dedicated individuals guiding MUTCU.
           </p>
 
-          <Link
-            to="/about"
-            className="btn btn-primary btn-lg me-3"
-          >
+          <Link to="/about" className="btn btn-primary btn-lg me-3">
             Meet the Team <i className="fas fa-users ms-2" />
           </Link>
 
-          <Link
-            to="/contact"
-            className="btn btn-secondary btn-lg"
-          >
+          <Link to="/contact" className="btn btn-secondary btn-lg">
             Get in Touch <i className="fas fa-envelope ms-2" />
           </Link>
         </div>
