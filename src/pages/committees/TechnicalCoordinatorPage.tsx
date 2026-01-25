@@ -54,11 +54,7 @@ const TechnicalCoordinatorPage = () => {
                 without distraction.
               </p>
               <p>
-                Under the leadership of John Mwanthi, the ministry unites
-                ushering, sound and audio-visual services, digital ministry, and
-                publicity. Through disciplined stewardship of resources and
-                skills, it supports worship, communication, and outreach in
-                alignment with MUTCU’s mission and values.
+                Under the leadership of John Mwanthi, the ministry unites ushering, sound and audio-visual services, digital ministry, and publicity. Through disciplined stewardship of resources and skills, it supports worship, communication, and outreach in alignment with MUTCU’s mission and values.
               </p>
             </div>
           </div>

@@ -58,9 +58,7 @@ const MissionsEvangelismMinistryPage = () => {
                 data-aos="zoom-in"
               />
               <h3 className="mt-3">Mercy Mutuku</h3>
-              <p className="text-muted">
-                Missions &amp; Evangelism Coordinator
-              </p>
+              <p className="text-muted">Missions &amp; Evangelism Coordinator</p>
             </div>
             <div className="col-lg-7">
               <h2 className="section-title" data-aos="fade-right">
@@ -303,9 +301,7 @@ const MissionsEvangelismMinistryPage = () => {
                   className="img-fluid rounded-circle mb-2 border-orange"
                 />
                 <h5 className="member-name">Mercy Mutuku</h5>
-                <p className="member-role">
-                  Missions &amp; Evangelism Coordinator
-                </p>
+                <p className="member-role">Missions &amp; Evangelism Coordinator</p>
                 <button className="btn btn-outline-light btn-sm" type="button">
                   View Profile
                 </button>

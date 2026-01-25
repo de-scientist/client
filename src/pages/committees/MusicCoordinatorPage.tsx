@@ -48,9 +48,9 @@ const MusicCoordinatorPage = () => {
                 About the Music Ministry
               </h3>
               <p>
-                The Music Ministry of MUTCU led by Peter Vaati is dedicated to
-                leading the Union in vibrant and spiritually uplifting worship
-                experiences. Comprising various teams including the choir, band,
+                The Music Ministry of MUTCU led by Peter Vaati is dedicated to leading the Union in
+                vibrant and spiritually uplifting worship experiences.
+                Comprising various teams including the choir, band,
                 instrumentalists, and praise and worship leaders, this ministry
                 plays a crucial role in creating an atmosphere where members can
                 connect with God through music and song.

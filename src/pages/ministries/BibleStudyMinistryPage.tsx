@@ -62,9 +62,7 @@ const BibleStudyMinistryPage = () => {
                 data-aos="zoom-in"
               />
               <h3 className="mt-3">Caleb Osere</h3>
-              <p className="text-muted">
-                Bible Study &amp; Discipleship Coordinator
-              </p>
+              <p className="text-muted">Bible Study &amp; Discipleship Coordinator</p>
             </div>
             <div className="col-lg-7">
               <h2 className="section-title" data-aos="fade-right">
@@ -313,9 +311,7 @@ const BibleStudyMinistryPage = () => {
                   className="img-fluid rounded-circle mb-2 border-orange"
                 />
                 <h5 className="member-name">Caleb Osere</h5>
-                <p className="member-role">
-                  Bible Study &amp; Discipleship Coordinator
-                </p>
+                <p className="member-role">Bible Study &amp; Discipleship Coordinator</p>
                 <button className="btn btn-outline-light btn-sm" type="button">
                   View Profile
                 </button>

@@ -11,27 +11,15 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="col-lg-4 col-md-6">
             <div className="mb-4">
-              <img
-                src={logo}
-                alt="MUTCU Logo"
-                height={55}
-                className="mb-3 logo-light"
-              />
+              <img src={logo} alt="MUTCU Logo" height={55} className="mb-3 logo-light" />
               <p className="text-light-muted small lh-lg">
-                The Murang’a University of Technology Christian Union is a
-                student-led non-denominational community building faith through
-                fellowship and service.
+                The Murang’a University of Technology Christian Union is a student-led non-denominational community 
+                building faith through fellowship and service.
               </p>
             </div>
             <div className="d-flex gap-2">
-              {[
-                "facebook-f",
-                "instagram",
-                "twitter",
-                "youtube",
-                "whatsapp",
-              ].map((icon) => (
-                <a key={icon} href="#" className="social-pill transition-all">
+              {['facebook-f', 'instagram', 'twitter', 'youtube', 'whatsapp'].map((icon) => (
+                <a title="icon" key={icon} href="#" className="social-pill transition-all">
                   <i className={`fab fa-${icon}`} />
                 </a>
               ))}
@@ -42,19 +30,9 @@ const Footer = () => {
           <div className="col-lg-2 col-md-6">
             <h6 className="footer-title">Quick Links</h6>
             <ul className="list-unstyled">
-              {[
-                "Home",
-                "About Us",
-                "Ministries",
-                "Events",
-                "Blog",
-                "Resources",
-              ].map((item) => (
+              {['Home', 'About Us', 'Ministries', 'Events', 'Blog', 'Resources'].map((item) => (
                 <li key={item} className="mb-2">
-                  <Link
-                    to={`/${item.toLowerCase().replace(" ", "")}`}
-                    className="footer-link"
-                  >
+                  <Link to={`/${item.toLowerCase().replace(' ', '')}`} className="footer-link">
                     {item}
                   </Link>
                 </li>
@@ -72,7 +50,7 @@ const Footer = () => {
               </div>
               <div className="d-flex mb-3">
                 <i className="fas fa-phone-alt text-orange me-3" />
-                <span>+254 707 223626/ +254 757 883073</span>
+                <span>+254 712 345 678</span>
               </div>
               <div className="d-flex">
                 <i className="fas fa-envelope text-red me-3" />
@@ -103,8 +81,7 @@ const Footer = () => {
 
         <div className="footer-bottom mt-5 pt-4 text-center">
           <p className="small text-light-muted mb-0">
-            &copy; {currentYear} Murang’a University of Technology Christian
-            Union.
+            &copy; {currentYear} Murang’a University of Technology Christian Union.
           </p>
           <p className="tiny-text text-secondary mt-1">
             Built by <span className="text-teal fw-bold">MUTCU Tech Team</span>

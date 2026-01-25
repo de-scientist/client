@@ -15,10 +15,12 @@ const PrayerMinistryPage = () => {
     e.preventDefault();
 
     if (!fullName || !email || !areaOfInterest) {
-      return;
+      
+      return
     }
 
-    console.log("Prayer Ministry Join Interest:", {
+    
+    console.log('Prayer Ministry Join Interest:', {
       fullName,
       email,
       areaOfInterest,

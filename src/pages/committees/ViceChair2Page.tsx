@@ -54,11 +54,7 @@ const ViceChair2Page = () => {
                 members.
               </p>
               <p>
-                David Kimani, as 2nd Vice Chair, is committed to fostering an
-                environment of unity and spiritual vibrancy. He assists in
-                various capacities, contributing to the planning and execution
-                of programs that align with MUTCU's mission to raise a
-                well-equipped family in Christ.
+               David Kimani, as 2nd Vice Chair, is committed to fostering an environment of unity and spiritual vibrancy. He assists in various capacities, contributing to the planning and execution of programs that align with MUTCU's mission to raise a well-equipped family in Christ.
               </p>
             </div>
           </div>
