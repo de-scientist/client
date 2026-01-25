@@ -15,7 +15,6 @@ import {
   User,
   Calendar,
   Download,
-  X,
 } from "lucide-react";
 
 interface PrayerRequest {
