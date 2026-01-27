@@ -15,7 +15,7 @@ import {
   Search,
   CheckCircle,
   XCircle,
-  Share2, 
+  // Share2, 
   Download,
 } from "lucide-react";
 import "../../styles/adminForms.css";
@@ -146,7 +146,7 @@ const exportMinistriesAsJSON = () => {
   URL.revokeObjectURL(url);
 };
 
-const shareAllMinistries = async () => {
+async () => {
   if (!ministries.length) {
     setError("No ministries to share");
     return;
@@ -179,7 +179,7 @@ const shareAllMinistries = async () => {
   }
 };
 
-const shareSingleMinistry = async (ministry: Ministry) => {
+async (ministry: Ministry) => {
   const shareText = `${ministry.name}
 🔗 ${ministry.slug}
 ${ministry.description || ""}`;
