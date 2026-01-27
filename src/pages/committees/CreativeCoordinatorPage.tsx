@@ -37,9 +37,7 @@ const CreativeCoordinatorPage = () => {
                   className="img-fluid rounded-circle mb-3 border border-3 border-navy"
                 />
                 <h4 className="member-name">Esther Karimeri</h4>
-                <p className="member-role">
-                  Creative Ministry Coordinator
-                </p>
+                <p className="member-role">Creative Ministry Coordinator</p>
               </div>
             </div>
 

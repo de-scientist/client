@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react'
+import { useState, useCallback, useEffect } from "react";
 
 type Img = { src: string; alt?: string };
 
@@ -18,8 +18,8 @@ const images: Img[] = [
 ];
 
 const GalleryPage = () => {
-  const [index, setIndex] = useState<number | null>(null)
-  const [downloading, setDownloading] = useState(false)
+  const [index, setIndex] = useState<number | null>(null);
+  const [downloading, setDownloading] = useState(false);
 
   const openAt = (i: number) => setIndex(i);
   const close = () => setIndex(null);
@@ -48,19 +48,19 @@ const GalleryPage = () => {
   }, [index, showNext, showPrev]);
 
   const downloadAll = async () => {
-    setDownloading(true)
+    setDownloading(true);
     for (let i = 0; i < images.length; i++) {
-      const img = images[i]
-      const a = document.createElement('a')
-      a.href = img.src
-      a.download = img.src.split('/').pop() || `image-${i + 1}`
-      document.body.appendChild(a)
-      a.click()
-      document.body.removeChild(a)
-      await new Promise((r) => setTimeout(r, 400))
+      const img = images[i];
+      const a = document.createElement("a");
+      a.href = img.src;
+      a.download = img.src.split("/").pop() || `image-${i + 1}`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      await new Promise((r) => setTimeout(r, 400));
     }
-    setDownloading(false)
-  }
+    setDownloading(false);
+  };
 
   return (
     <div className="gallery-wrapper">
@@ -70,18 +70,29 @@ const GalleryPage = () => {
           <div className="row align-items-center">
             <div className="col-md-8">
               <span className="badge-pill mb-2">Moments of Grace</span>
-              <h1 className="display-4 fw-bold text-navy">MUTCU <span className="text-teal">Gallery</span></h1>
-              <p className="lead text-muted">A visual journey of our fellowships, outreach, and ministry activities.</p>
+              <h1 className="display-4 fw-bold text-navy">
+                MUTCU <span className="text-teal">Gallery</span>
+              </h1>
+              <p className="lead text-muted">
+                A visual journey of our fellowships, outreach, and ministry
+                activities.
+              </p>
             </div>
             <div className="col-md-4 text-md-end">
-              <button 
-                className={`btn btn-download-all btn-lg px-4 py-3 rounded-pill shadow-sm ${downloading ? 'disabled' : ''}`} 
+              <button
+                className={`btn btn-download-all btn-lg px-4 py-3 rounded-pill shadow-sm ${downloading ? "disabled" : ""}`}
                 onClick={downloadAll}
               >
                 {downloading ? (
-                  <><span className="spinner-border spinner-border-sm me-2"></span>Downloading...</>
+                  <>
+                    <span className="spinner-border spinner-border-sm me-2"></span>
+                    Downloading...
+                  </>
                 ) : (
-                  <><i className="fas fa-cloud-download-alt me-2"></i>Download All</>
+                  <>
+                    <i className="fas fa-cloud-download-alt me-2"></i>Download
+                    All
+                  </>
                 )}
               </button>
             </div>
@@ -95,15 +106,19 @@ const GalleryPage = () => {
           {images.map((img, i) => (
             <div className="col-6 col-md-4 col-lg-3" key={img.src}>
               <div className="gallery-item" onClick={() => openAt(i)}>
-                <img src={img.src} alt={img.alt} className="gallery-img" loading="lazy" />
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="gallery-img"
+                  loading="lazy"
+                />
                 <div className="gallery-overlay">
                   <div className="overlay-content">
                     <span className="overlay-title">{img.alt}</span>
-                    <a 
-                      title='download'
-                      href={img.src} 
-                      download 
-                      onClick={(e) => e.stopPropagation()} 
+                    <a
+                      href={img.src}
+                      download
+                      onClick={(e) => e.stopPropagation()}
                       className="btn-item-download"
                     >
                       <i className="fas fa-arrow-down"></i>
@@ -119,22 +134,39 @@ const GalleryPage = () => {
       {/* LIGHTBOX */}
       {index !== null && (
         <div className="lightbox-container" onClick={close}>
-          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
-            <img src={images[index].src} alt={images[index].alt} className="lightbox-image" />
-            
+          <div
+            className="lightbox-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={images[index].src}
+              alt={images[index].alt}
+              className="lightbox-image"
+            />
+
             <div className="lightbox-controls">
-              <button type='button' title='previous' className="ctrl-btn" onClick={showPrev}><i className="fas fa-chevron-left"></i></button>
-              <button type='button' title='next' className="ctrl-btn" onClick={showNext}><i className="fas fa-chevron-right"></i></button>
+              <button className="ctrl-btn" onClick={showPrev}>
+                <i className="fas fa-chevron-left"></i>
+              </button>
+              <button className="ctrl-btn" onClick={showNext}>
+                <i className="fas fa-chevron-right"></i>
+              </button>
             </div>
 
             <div className="lightbox-info">
               <h5 className="mb-0 text-white">{images[index].alt}</h5>
-              <p className="text-white-50 small mb-0">Image {index + 1} of {images.length}</p>
+              <p className="text-white-50 small mb-0">
+                Image {index + 1} of {images.length}
+              </p>
             </div>
 
             <div className="lightbox-top-actions">
-               <a title='download' href={images[index].src} download className="action-btn me-3"><i className="fas fa-download"></i></a>
-               <button type='button' title='close' className="action-btn" onClick={close}><i className="fas fa-times"></i></button>
+              <a href={images[index].src} download className="action-btn me-3">
+                <i className="fas fa-download"></i>
+              </a>
+              <button className="action-btn" onClick={close}>
+                <i className="fas fa-times"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -326,4 +358,4 @@ const GalleryPage = () => {
   );
 };
 
-export default GalleryPage
+export default GalleryPage;

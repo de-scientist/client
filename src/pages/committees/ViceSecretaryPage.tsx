@@ -53,7 +53,11 @@ const ViceSecretaryPage = () => {
                 administrative tasks are handled efficiently and accurately.
               </p>
               <p>
-                Natasha Amani, as Vice Secretary, works diligently to uphold the Union's commitment to transparency and effective communication. She assists in preparing meeting documents, managing correspondence, and ensuring that the Union's administrative processes support its spiritual and outreach goals.
+                Natasha Amani, as Vice Secretary, works diligently to uphold the
+                Union's commitment to transparency and effective communication.
+                She assists in preparing meeting documents, managing
+                correspondence, and ensuring that the Union's administrative
+                processes support its spiritual and outreach goals.
               </p>
             </div>
           </div>

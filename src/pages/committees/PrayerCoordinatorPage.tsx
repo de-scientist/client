@@ -51,9 +51,10 @@ const PrayerCoordinatorPage = () => {
                 and dependence on God.
               </p>
               <p>
-                Under the leadership of Martha Thuku, the ministry organizes prayer
-                gatherings, keshas, chains, and special seasons of fasting and
-                intercession for the Union, the university, and the nation.
+                Under the leadership of Martha Thuku, the ministry organizes
+                prayer gatherings, keshas, chains, and special seasons of
+                fasting and intercession for the Union, the university, and the
+                nation.
               </p>
             </div>
           </div>

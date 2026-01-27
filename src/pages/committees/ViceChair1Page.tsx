@@ -51,7 +51,12 @@ const ViceChair1Page = () => {
                 administration of MUTCU.
               </p>
               <p>
-                Purity Njeri, as 1st Vice Chair, is dedicated to upholding the Union's values and actively contributes to the strategic planning and implementation of activities that build spiritual growth among members. She is also in charge of the Hospitality ministry and Ladies committee, overseeing the nurturing and development of ladies in the Union.
+                Purity Njeri, as 1st Vice Chair, is dedicated to upholding the
+                Union's values and actively contributes to the strategic
+                planning and implementation of activities that build spiritual
+                growth among members. She is also in charge of the Hospitality
+                ministry and Ladies committee, overseeing the nurturing and
+                development of ladies in the Union.
               </p>
             </div>
           </div>

@@ -51,9 +51,12 @@ const ChairmanPage = () => {
                 all members.
               </p>
               <p>
-                Purdri Kihika, as Chairman, embodies the Union&apos;s commitment to inspiring love, hope, and godliness. He presides
-                over Executive Council meetings, represents MUTCU in various forums like FOCUS Regional and National Meetings, and
-                works closely with all dockets and ministries to ensure the smooth and effective operation of the Union.
+                Purdri Kihika, as Chairman, embodies the Union&apos;s commitment
+                to inspiring love, hope, and godliness. He presides over
+                Executive Council meetings, represents MUTCU in various forums
+                like FOCUS Regional and National Meetings, and works closely
+                with all dockets and ministries to ensure the smooth and
+                effective operation of the Union.
               </p>
             </div>
           </div>

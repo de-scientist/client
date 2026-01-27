@@ -31,20 +31,20 @@ import {
 import "../assets/mut/css/about.css";
 
 interface DashboardStats {
-  users: number
-  events: number
-  ministries: number
-  prayerRequests: number
-  pendingPrayerRequests: number
-  contacts: number
-  newContacts: number
-  subscriptions: number
-  members: number
-  pendingMembers: number
-  resources?: number
-  media?: number
-  blogs?: number
-  publishedBlogs?: number
+  users: number;
+  events: number;
+  ministries: number;
+  prayerRequests: number;
+  pendingPrayerRequests: number;
+  contacts: number;
+  newContacts: number;
+  subscriptions: number;
+  members: number;
+  pendingMembers: number;
+  resources?: number;
+  media?: number;
+  blogs?: number;
+  publishedBlogs?: number;
 }
 
 const AdminDashboard = () => {
@@ -115,14 +115,16 @@ const AdminDashboard = () => {
   if (!stats) return null;
 
   const barData = [
-    { name: 'Users', value: stats.users },
-    { name: 'Events', value: stats.events },
-    { name: 'Ministries', value: stats.ministries },
-    { name: 'Prayers', value: stats.prayerRequests },
-    { name: 'Contacts', value: stats.contacts },
-    { name: 'Subscribers', value: stats.subscriptions },
-    { name: 'Members', value: stats.members },
-    ...(stats.blogs !== undefined ? [{ name: 'Blogs', value: stats.blogs }] : []),
+    { name: "Users", value: stats.users },
+    { name: "Events", value: stats.events },
+    { name: "Ministries", value: stats.ministries },
+    { name: "Prayers", value: stats.prayerRequests },
+    { name: "Contacts", value: stats.contacts },
+    { name: "Subscribers", value: stats.subscriptions },
+    { name: "Members", value: stats.members },
+    ...(stats.blogs !== undefined
+      ? [{ name: "Blogs", value: stats.blogs }]
+      : []),
     ...(stats.resources !== undefined
       ? [{ name: "Resources", value: stats.resources }]
       : []),
@@ -185,16 +187,66 @@ const AdminDashboard = () => {
         <section className="mb-5">
           <div className="row g-3">
             {[
-              { label: 'Events', icon: <Calendar />, link: '/admin/events', color: '#6366f1' },
-              { label: 'Ministries', icon: <Church />, link: '/admin/ministries', color: '#8b5cf6' },
-              { label: 'Prayers', icon: <Heart />, link: '/admin/prayer-requests', color: '#ec4899' },
-              { label: 'Contacts', icon: <Send />, link: '/admin/contacts', color: '#06b6d4' },
-              { label: 'Newsletter', icon: <Mail />, link: '/admin/newsletter', color: '#10b981' },
-              { label: 'Users', icon: <Users />, link: '/admin/users', color: '#4f46e5' },
-              { label: 'Blogs', icon: <FolderOpen />, link: '/admin/blogs', color: '#f97316' },
-              { label: 'Members', icon: <UserPlus />, link: '/admin/members', color: '#f59e0b' },
-              { label: 'Resources', icon: <FolderOpen />, link: '/admin/resources', color: '#0ea5e9' },
-              { label: 'Media', icon: <Image />, link: '/admin/media', color: '#f97316' },
+              {
+                label: "Events",
+                icon: <Calendar />,
+                link: "/admin/events",
+                color: "#6366f1",
+              },
+              {
+                label: "Ministries",
+                icon: <Church />,
+                link: "/admin/ministries",
+                color: "#8b5cf6",
+              },
+              {
+                label: "Prayers",
+                icon: <Heart />,
+                link: "/admin/prayer-requests",
+                color: "#ec4899",
+              },
+              {
+                label: "Contacts",
+                icon: <Send />,
+                link: "/admin/contacts",
+                color: "#06b6d4",
+              },
+              {
+                label: "Newsletter",
+                icon: <Mail />,
+                link: "/admin/newsletter",
+                color: "#10b981",
+              },
+              {
+                label: "Users",
+                icon: <Users />,
+                link: "/admin/users",
+                color: "#4f46e5",
+              },
+              {
+                label: "Blogs",
+                icon: <FolderOpen />,
+                link: "/admin/blogs",
+                color: "#f97316",
+              },
+              {
+                label: "Members",
+                icon: <UserPlus />,
+                link: "/admin/members",
+                color: "#f59e0b",
+              },
+              {
+                label: "Resources",
+                icon: <FolderOpen />,
+                link: "/admin/resources",
+                color: "#0ea5e9",
+              },
+              {
+                label: "Media",
+                icon: <Image />,
+                link: "/admin/media",
+                color: "#f97316",
+              },
             ].map((item, index) => (
               <div key={index} className="col-4 col-md-3 col-lg">
                 <button
@@ -221,14 +273,57 @@ const AdminDashboard = () => {
 
         {/* STAT CARDS */}
         <section className="row g-4 mb-5">
-          <StatCard label="Total Users" value={stats.users} icon={<Users />} link="/admin/users" />
-          <StatCard label="Live Events" value={stats.events} icon={<Calendar />} link="/admin/events" />
-          <StatCard label="Active Ministries" value={stats.ministries} icon={<Church />} link="/admin/ministries" />
-          <StatCard label="Prayer Requests" value={stats.prayerRequests} icon={<Heart />} link="/admin/prayer-requests" />
-          <StatCard label="Pending Prayers" value={stats.pendingPrayerRequests} icon={<Clock />} isAlert link="/admin/prayer-requests?status=PENDING" />
-          <StatCard label="New Contacts" value={stats.newContacts} icon={<Send />} isAlert link="/admin/contacts?status=NEW" />
-          <StatCard label="Active Members" value={stats.members} icon={<UserPlus />} link="/admin/members" />
-          <StatCard label="Pending Members" value={stats.pendingMembers} icon={<AlertCircle />} isAlert link="/admin/members?status=PENDING" />
+          <StatCard
+            label="Total Users"
+            value={stats.users}
+            icon={<Users />}
+            link="/admin/users"
+          />
+          <StatCard
+            label="Live Events"
+            value={stats.events}
+            icon={<Calendar />}
+            link="/admin/events"
+          />
+          <StatCard
+            label="Active Ministries"
+            value={stats.ministries}
+            icon={<Church />}
+            link="/admin/ministries"
+          />
+          <StatCard
+            label="Prayer Requests"
+            value={stats.prayerRequests}
+            icon={<Heart />}
+            link="/admin/prayer-requests"
+          />
+          <StatCard
+            label="Pending Prayers"
+            value={stats.pendingPrayerRequests}
+            icon={<Clock />}
+            isAlert
+            link="/admin/prayer-requests?status=PENDING"
+          />
+          <StatCard
+            label="New Contacts"
+            value={stats.newContacts}
+            icon={<Send />}
+            isAlert
+            link="/admin/contacts?status=NEW"
+          />
+          <StatCard
+            label="Active Members"
+            value={stats.members}
+            icon={<UserPlus />}
+            link="/admin/members"
+          />
+          <StatCard
+            label="Pending Members"
+            value={stats.pendingMembers}
+            icon={<AlertCircle />}
+            isAlert
+            link="/admin/members?status=PENDING"
+          />
           {stats.blogs !== undefined && (
             <StatCard
               label="Blogs (total/published)"
@@ -302,12 +397,12 @@ const AdminDashboard = () => {
 };
 
 interface StatCardProps {
-  label: string
-  value: number
-  icon?: any
-  link?: string
-  isAlert?: boolean
-  helperValue?: number
+  label: string;
+  value: number;
+  icon?: any;
+  link?: string;
+  isAlert?: boolean;
+  helperValue?: number;
 }
 
 const StatCard: React.FC<StatCardProps> = ({
@@ -333,7 +428,9 @@ const StatCard: React.FC<StatCardProps> = ({
             </p>
             <h2 className="fw-black mb-1">{value.toLocaleString()}</h2>
             {helperValue !== undefined && (
-              <p className="mb-0 text-muted small">Published: {helperValue.toLocaleString()}</p>
+              <p className="mb-0 text-muted small">
+                Published: {helperValue.toLocaleString()}
+              </p>
             )}
             {link && (
               <span className="text-primary small fw-bold">
